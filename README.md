@@ -1,1 +1,1 @@
-# web_application_development2025
+# WAD2025
