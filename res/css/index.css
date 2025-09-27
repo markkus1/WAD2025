@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+}
+
+/* Sidebars */
+
+.Rsidebar {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    flex: 0 0 20%;
+}
+
+.Lsidebar {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    flex: 0 0 20%;
+}
+
+/* Posts Section */
+
+.posts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+.post p { /* Descendant Selector */
+    color: #242424;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-header + p { /* Adjacent Sibling Selector */
+    font-style: italic;  
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.post-photo {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.like {
+    margin-top: 5px;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
+.post p ~ .like { /* General Sibling Selector */
+    cursor: pointer;
+}
+
+/* Footer */
+
+#main-footer { /* ID Selector */
+    background: #e36414;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Phone view */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .Lsidebar, .Rsidebar {
+        display: none;
+    }
+
+    .posts {
+        flex: 1 1 100%;
+    }
+}
