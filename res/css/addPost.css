@@ -100,11 +100,11 @@ input[type="file"] {
         max-width: 100%; 
     }
 
-    .btn-row { 
+    .button-row { 
         justify-content: stretch; 
     }
 
-    .btn-row > * { /* Child Selector */
+    .button-row > * { /* Child Selector */
         flex: 1 1 auto;
     }
 }
