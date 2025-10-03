@@ -1,0 +1,110 @@
+.page {
+    /* Page container (centers card) */
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: #f3f5f8;
+}
+
+/* Card */
+
+.card {
+    width: 100%;
+    max-width: 520px;
+    background: #fff;
+    border: 1px dashed #c7ced8;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.06);
+}
+
+/* Form */
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Field */
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Labels */
+
+.card label { /* Descendant Selector */
+    font-weight: 600;
+}
+
+label.required::after { /* Pseudo-element */
+    content: " *";
+    color: #c62828;
+}
+
+/* Inputs */
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #cfd6df;
+    background: #f9fbfe;
+    font: inherit;
+}
+
+label + textarea { /* Adjacent Sibling Selector */
+    margin-top: 2px;
+}
+
+input[type="file"] {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #cfd6df;
+    background: #f9fbfe;
+    font: inherit;
+}
+
+/* Buttons */
+
+.button-row {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.button {
+    border: 0;
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    background: #2f61d7;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#createPost:hover { /* ID Selector + Pseudo-class */
+    filter: brightness(1.05);
+}
+
+/* Phone view */
+
+@media (max-width: 768px) {
+    .card { 
+        max-width: 100%; 
+    }
+
+    .btn-row { 
+        justify-content: stretch; 
+    }
+
+    .btn-row > * { /* Child Selector */
+        flex: 1 1 auto;
+    }
+}

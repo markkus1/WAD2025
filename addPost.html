@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="res/images/favicon.ico" />
+    <link rel="stylesheet" href="res/css/style.css" />
+    <link rel="stylesheet" href="res/css/addPost.css" />
+    <title>Add Post</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- Navigation to Home -->
+      <ul class="nav">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+      </ul>
+
+      <!-- Profile -->
+      <a class="logo" href="login.html">
+        <img src="res/images/me.png" width="50" height="50" alt="My picture" />
+      </a>
+    </header>
+
+    <!-- Main -->
+    <main class="page">
+      <!-- Add Post card -->
+      <section class="card">
+        <!-- Form (submits to index.html) -->
+        <form class="form-card" action="index.html" method="get">
+          <!-- Post body -->
+          <div class="field">
+            <label for="body" class="required">Post body</label>
+            <textarea
+              id="body"
+              name="body"
+              placeholder="textarea"
+              required
+            ></textarea>
+          </div>
+
+          <!-- File -->
+          <div class="field">
+            <label for="photo">Select file</label>
+            <input id="photo" name="photo" type="file" accept="image/*" />
+          </div>
+
+          <!-- Submit button -->
+          <div class="button-row">
+            <button id="createPost" class="button" type="submit">
+              Create post
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
