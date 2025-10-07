@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="res/images/favicon.ico" />
+    <link rel="stylesheet" href="res/css/style.css" />
+    <link rel="stylesheet" href="res/css/login.css" />
+    <title>Add Post</title>
+</head>
+
+<body>
+<header class="header">
+    <!-- Navigation to Home -->
+    <ul class="nav">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+    </ul>
+
+    <!-- Profile -->
+    <a class="logo" href="login.html">
+        <img src="res/images/me.png" width="50" height="50" alt="My picture" />
+    </a>
+</header>
+
+<!-- Main -->
+<main class="page">
+    <!-- Login card -->
+    <section class="card">
+        <!-- Login Form -->
+        <form class="form-card" action="index.html" method="get">
+            <!-- Login body -->
+            <div class="login-field">
+                <label >Welcome to PostIt</label>
+            </div>
+            <div class="login-field-blue">
+                <label > Create an account</label>
+            </div>
+            <div class="login-field">
+                <label > or</label>
+            </div>
+            <div class="login-field">
+                <label >Please log in</label>
+            </div>
+
+            <div class="input-field">
+                <label for="email"></label><input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        required
+                />
+            </div>
+
+            <!-- Password -->
+            <div class="input-field">
+                <label for="password"></label><input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Password"
+                        required
+                />
+            </div>
+
+            <button class="button">Log in</button>
+
+            <div class="login-field-blue">
+                <label >Forgot password?</label>
+            </div>
+
+        </form>
+    </section>
+</main>
+</body>
+</html>
