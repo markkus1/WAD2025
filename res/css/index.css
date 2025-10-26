@@ -43,11 +43,15 @@
 .post-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px; 
 }
 
 .post-header + p { /* Adjacent Sibling Selector */
     font-style: italic;  
+}
+
+.post-header .date {
+  margin-left: auto;
 }
 
 .avatar {
