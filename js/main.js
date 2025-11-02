@@ -30,3 +30,23 @@ fetch('data/posts.json')
     });
   })
   .catch(error => console.error('Error fetching JSON:', error));
+
+document.addEventListener("DOMContentLoaded", function() { // starts after html is loaded
+    // find the necessary parts in the html
+    const profilePicture = document.querySelector(".profile-picture");
+    const dropdown = document.getElementById("dropdown-menu");
+
+    // add a listener for clicking on the profile picture
+    profilePicture.addEventListener("click", function(event) {
+        dropdown.classList.toggle("show"); // shows the dropdown
+        event.stopPropagation(); // this is necessary so the dropdown won't close automatically
+    });
+
+    // similar logic as above but for closing logic, important that the constant is profilePic in order to open and close the dropdown only when clicking on the profile pic
+    profilePicture.addEventListener("click", function(event) {
+        if (!profilePicture.contains(event.target)) {
+            dropdown.classList.remove("show");
+        }
+    });
+});
+

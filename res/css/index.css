@@ -76,6 +76,52 @@
     cursor: pointer;
 }
 
+.profile-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
+    padding-right: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #c7c2c2;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 200px;
+    text-align: left;
+    padding: 10px;
+    z-index: 100; /* makes the dropdown pop-up on top of all the other content */
+}
+
+.dropdown-menu p {
+    margin: 8px 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.logout-button {
+    display: block;
+    padding: 8px 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-button:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.dropdown-menu.show {
+    display: block; /* treats the dropdown like a card */
+}
+
 /* Footer */
 
 #main-footer { /* ID Selector */
