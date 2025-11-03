@@ -69,11 +69,11 @@ label.required::after { /* Pseudo-element */
 .button-row {
     display: flex;
     gap: 8px;
-    justify-content: flex-center;
+    justify-content: center;
 }
 
 .button {
-    display-flex;
+    display: flex;
     border: 0;
     padding: .7rem 1rem;
     border-radius: 10px;

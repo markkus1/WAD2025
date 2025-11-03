@@ -8,20 +8,26 @@
     <link rel="icon" href="res/images/favicon.ico" />
     <link rel="stylesheet" href="res/css/style.css" />
     <link rel="stylesheet" href="res/css/addPost.css" />
+    <link rel="stylesheet" href="res/css/index.css" />
+
     <title>Add Post</title>
   </head>
 
   <body>
     <header class="header">
-      <!-- Navigation to Home -->
-      <ul class="nav">
-        <li><a href="index.html" class="nav-item">Home</a></li>
-      </ul>
-
-      <!-- Profile -->
-      <a class="logo" href="login.html">
-        <img src="res/images/me.png" width="50" height="50" alt="My picture" />
-      </a>
+        <ul class="nav">
+            <li><a href="index.html" class="nav-item">Home</a></li>
+            <li><a >|</a></li>
+            <li><a href="addPost.html" class="nav-item">addPost</a></li>
+        </ul>
+        <div class="profile-container">
+            <img src="res/images/me.png" width="50" height="50" alt="My picture" class="profile-picture">
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu">
+             <p class="user-name">John Doe</p>
+             <p class="user-email">john.doe@ut.ee</p>
+             <a href="login.html" class="logout-button">Logout</a>
+         </div>
     </header>
 
     <!-- Main -->
@@ -56,5 +62,6 @@
         </form>
       </section>
     </main>
+        <script src="js/main.js"></script>
   </body>
 </html>
