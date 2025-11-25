@@ -8,7 +8,7 @@
     <link rel="icon" href="res/images/favicon.ico" />
     <link rel="stylesheet" href="res/css/style.css" />
     <link rel="stylesheet" href="res/css/login.css" />
-    <title>Add Post</title>
+    <title>Signup</title>
 </head>
 
 <body>
@@ -26,22 +26,15 @@
 
 <!-- Main -->
 <main class="page">
-    <!-- Login card -->
+    <!-- Signup card -->
     <section class="card">
-        <!-- Login Form -->
-        <form class="form-card" action="index.html" method="get">
-            <!-- Login body -->
+        <!-- Signup Form -->
+        <form class="form-card" id="signupForm">
             <div class="login-field">
-                <label >Welcome to PostIt</label>
+                <label>Welcome to PostIt</label>
             </div>
             <div class="login-field-blue">
-                <a href="signup.html">Create an account</a>
-            </div>
-            <div class="login-field">
-                <label > or</label>
-            </div>
-            <div class="login-field">
-                <label >Please log in</label>
+                <label>Create an account</label>
             </div>
 
             <div class="input-field">
@@ -54,7 +47,6 @@
                 />
             </div>
 
-            <!-- Password -->
             <div class="input-field">
                 <label for="password"></label><input
                         type="password"
@@ -65,16 +57,15 @@
                 />
             </div>
 
-            <button class="button">Log in</button>
-
-            <div class="login-field-blue">
-                <label >Forgot password?</label>
-            </div>
-
             <p id="passwordError" style="color: red; font-size: 14px;"></p>
+
+            <button class="button" type="submit">Sign up</button>
 
         </form>
     </section>
 </main>
+
+<script src="js/signup.js"></script>
+
 </body>
 </html>
